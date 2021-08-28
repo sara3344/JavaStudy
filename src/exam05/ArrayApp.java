@@ -1,5 +1,5 @@
 package exam05;
-
+// 생활코딩 제어문 실습
 public class ArrayApp {
     public static void main(String[] args) {
         String[] users = new String[3];
