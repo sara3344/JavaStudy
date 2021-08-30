@@ -1,5 +1,5 @@
 package exam06_method;
-// 메소드 인풋
+// 메소드 입력값
 public class WhyMethod {
     public static void main(String[] args) {
 
