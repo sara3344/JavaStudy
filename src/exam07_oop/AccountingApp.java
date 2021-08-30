@@ -1,9 +1,7 @@
 package exam07_oop;
 
-public class AccountingApp {
-    // 공급가액
+class Accounting {
     public static double valueOfSupply;
-    // 부가가치세율
     public static double vatRate = 0.1;
 
     public static double getVAT() {
@@ -13,11 +11,13 @@ public class AccountingApp {
     public static double getTotal() {
         return valueOfSupply + getVAT();
     }
+}
 
+public class AccountingApp {
     public static void main(String[] args) {
-        valueOfSupply = 10000.0;
-        System.out.println("Value of supply: " + valueOfSupply);
-        System.out.println("VAT: " + getVAT());
-        System.out.println("Total: " + getTotal());
+        Accounting.valueOfSupply = 10000.0;
+        System.out.println("Value of supply: " + Accounting.valueOfSupply);
+        System.out.println("VAT: " + Accounting.getVAT());
+        System.out.println("Total: " + Accounting.getTotal());
     }
 }
