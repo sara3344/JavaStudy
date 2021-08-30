@@ -6,8 +6,16 @@ class Cal {
     }
 }
 
-class Cal3 extends Cal { // Cal class의 메소드와 변수를 모두 상속 받음
+class Cal3 extends Cal {
+    public int minus(int v1, int v2) { // 부모 클래스가 갖고 있지 않은 메소드 추가
+        return v1 - v2;
+    }
 
+    // Overriding
+    public int sum(int v1, int v2) { // 부모 클래스가 갖고 있는 메소드 재정의
+        System.out.println("Cal3!!");
+        return v1 + v2;
+    }
 }
 
 public class InheritanceApp {
@@ -17,7 +25,10 @@ public class InheritanceApp {
         System.out.println(c.sum(2, 1));
 
         Cal3 c3 = new Cal3();
-        System.out.println(c3.sum(3, 2));
+        System.out.println(c3.sum(2, 1));
+        System.out.println(c3.minus(2, 1));
+        System.out.println(c3.sum(2, 1));
+
     }
 }
 
