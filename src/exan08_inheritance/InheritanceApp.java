@@ -6,7 +6,7 @@ class Cal {
     }
 }
 
-class Cal3 extends Cal { // Cal 메소드와 변수를 모두 상속 받음
+class Cal3 extends Cal { // Cal class의 메소드와 변수를 모두 상속 받음
 
 }
 
