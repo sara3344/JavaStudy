@@ -1,26 +1,29 @@
 package exam07_oop;
-
+// 같은 결과이지만 다른 코드
 public class MyOOP {
     public static void main(String[] args) {
-        // ..
-        printA("----");
-        printA("----");
-        printB("----");
-        printB("----");
+        delimiter = "----";
+        printA();
+        printA();
+        printB();
+        printB();
 
-        printA("****");
-        printA("****");
-        printB("****");
-        printB("****");
+        delimiter = "****";
+        printA();
+        printA();
+        printB();
+        printB();
     }
 
-    public static void printA(String delimiter) {
+    public static String delimiter = "";
+
+    public static void printA() {
         System.out.println(delimiter);
         System.out.println("A");
         System.out.println("A");
     }
 
-    public static void printB(String delimiter) {
+    public static void printB() {
         System.out.println(delimiter);
         System.out.println("B");
         System.out.println("B");
