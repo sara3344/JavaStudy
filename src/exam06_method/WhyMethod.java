@@ -1,19 +1,21 @@
 package exam06_method;
-
+// 메소드 인풋
 public class WhyMethod {
-    public static void printTwoTimesA() { // printTwoTimesA 메소드 안에는 이런 내용이 들어있구나
-        System.out.println("-");
-        System.out.println("B");
-        System.out.println("B");
-    }
-
     public static void main(String[] args) {
 
+        // 인자, argument
+        printTwoTimes("a", "-"); // String text, String delimiter
         // 100000000
-        printTwoTimesA(); // printTwoTimesA 메소드가 있구나
+        printTwoTimes("a", "*");
         // 100000000
-        printTwoTimesA();
-        // 100000000
-        printTwoTimesA();
+        printTwoTimes("a", "&");
+        printTwoTimes("b", "!");
+    }
+
+                                    // 매개변수, parameter
+    public static void printTwoTimes(String text, String delimiter) {
+        System.out.println(delimiter);
+        System.out.println(text);
+        System.out.println(text);
     }
 }
