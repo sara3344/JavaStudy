@@ -2,7 +2,7 @@ package exam07_oop;
 // 생성자
 class Print {
     public String delimiter = "";
-    public Print(String _delimiter) {
+    public Print(String delimiter) {
         this.delimiter = delimiter;
     }
     public void A() {
